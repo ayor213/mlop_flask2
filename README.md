@@ -1,1 +1,2 @@
-# mlop_flask2
+# mlop_flask
+Create a flask application for ML Ops

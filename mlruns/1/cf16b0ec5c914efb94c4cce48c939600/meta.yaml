@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/sage/Documents/mlop_flask2/mlruns/1/cf16b0ec5c914efb94c4cce48c939600/artifacts
+end_time: 1666368822776
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: cf16b0ec5c914efb94c4cce48c939600
+run_uuid: cf16b0ec5c914efb94c4cce48c939600
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1666368821186
+status: 3
+tags: []
+user_id: sage

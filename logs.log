@@ -16908,3 +16908,106 @@ _catboost.CatBoostError: There is no trained model to use get_all_params(). Use 
 2022-10-23 14:08:04,950:INFO:Preloading libraries
 2022-10-23 14:08:04,950:INFO:Set up data.
 2022-10-23 14:08:04,956:INFO:Set up index.
+2022-10-23 16:14:05,664:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-23 16:14:05,666:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-23 16:14:05,666:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-23 16:14:05,666:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-23 16:14:08,828:INFO:Soft dependency imported: prophet: 1.1.1
+2022-10-23 16:14:10,349:INFO:Initializing load_model()
+2022-10-23 16:14:10,350:INFO:load_model(model_name=MLOps_Pipeline, platform=None, authentication=None, verbose=True)
+2022-10-23 16:14:19,333:INFO:Initializing predict_model()
+2022-10-23 16:14:19,333:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7f8c17f86df0>, estimator=Pipeline(memory=Memory(location=/var/folders/sg/8dmzq1nn0wl6qmndt2sf_m1r0000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(fill_value='constant',
+                                                              strategy='constant'))),
+                ('or...
+                                                                        {'col': 'smoker',
+                                                                         'mapping': {nan: -1,
+                                                                                     'no': 0,
+                                                                                     'yes': 1}}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('low_variance',
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0))),
+                ('trained_model', GradientBoostingRegressor(random_state=122))]), probability_threshold=None, encoded_labels=False, raw_score=False, drift_report=False, round=0, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x7f8c17f6b280>)
+2022-10-23 16:14:19,333:INFO:Checking exceptions
+2022-10-23 16:14:19,333:INFO:Preloading libraries
+2022-10-23 16:14:19,334:INFO:Set up data.
+2022-10-23 16:14:19,340:INFO:Set up index.
+2022-10-23 16:14:37,524:INFO:Initializing predict_model()
+2022-10-23 16:14:37,524:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7f8c17f63b80>, estimator=Pipeline(memory=Memory(location=/var/folders/sg/8dmzq1nn0wl6qmndt2sf_m1r0000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(fill_value='constant',
+                                                              strategy='constant'))),
+                ('or...
+                                                                        {'col': 'smoker',
+                                                                         'mapping': {nan: -1,
+                                                                                     'no': 0,
+                                                                                     'yes': 1}}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('low_variance',
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0))),
+                ('trained_model', GradientBoostingRegressor(random_state=122))]), probability_threshold=None, encoded_labels=False, raw_score=False, drift_report=False, round=0, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x7f8c17f6bca0>)
+2022-10-23 16:14:37,524:INFO:Checking exceptions
+2022-10-23 16:14:37,524:INFO:Preloading libraries
+2022-10-23 16:14:37,524:INFO:Set up data.
+2022-10-23 16:14:37,541:INFO:Set up index.
+2022-10-23 18:05:59,699:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-23 18:05:59,701:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-23 18:05:59,701:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-23 18:05:59,701:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-23 18:06:02,902:INFO:Soft dependency imported: prophet: 1.1.1
+2022-10-23 18:06:04,362:INFO:Initializing load_model()
+2022-10-23 18:06:04,362:INFO:load_model(model_name=MLOps_Pipeline, platform=None, authentication=None, verbose=True)
+2022-10-23 18:06:31,043:INFO:Initializing predict_model()
+2022-10-23 18:06:31,044:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7f7fb2820a30>, estimator=Pipeline(memory=Memory(location=/var/folders/sg/8dmzq1nn0wl6qmndt2sf_m1r0000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(fill_value='constant',
+                                                              strategy='constant'))),
+                ('or...
+                                                                        {'col': 'smoker',
+                                                                         'mapping': {nan: -1,
+                                                                                     'no': 0,
+                                                                                     'yes': 1}}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('low_variance',
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0))),
+                ('trained_model', GradientBoostingRegressor(random_state=122))]), probability_threshold=None, encoded_labels=False, raw_score=False, drift_report=False, round=0, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x7f7fb27eb1f0>)
+2022-10-23 18:06:31,045:INFO:Checking exceptions
+2022-10-23 18:06:31,045:INFO:Preloading libraries
+2022-10-23 18:06:31,045:INFO:Set up data.
+2022-10-23 18:06:31,052:INFO:Set up index.

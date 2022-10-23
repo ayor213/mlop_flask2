@@ -1,11 +1,12 @@
 # syntax=docker/dockerfile:1
 
-FROM python:3.9.7
+FROM python:3.10.8
 
 RUN pip install virtualenv
 ENV VIRTUAL_ENV=/venv
 RUN virtualenv venv -p python3
 RUN pip install flask
+RUN pip install pycaret-nightly
 ENV PATH="VIRTUAL_ENV/bin:$PATH"
 
 WORKDIR /python-docker

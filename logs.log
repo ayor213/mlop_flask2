@@ -15127,3 +15127,136 @@ _catboost.CatBoostError: There is no trained model to use get_all_params(). Use 
 2022-10-22 19:25:36,466:INFO:Preloading libraries
 2022-10-22 19:25:36,479:INFO:Set up data.
 2022-10-22 19:25:36,551:INFO:Set up index.
+2022-10-23 13:17:00,866:INFO:Initializing predict_model()
+2022-10-23 13:17:00,878:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7faca14defa0>, estimator=Pipeline(memory=Memory(location=/var/folders/sg/8dmzq1nn0wl6qmndt2sf_m1r0000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(fill_value='constant',
+                                                              strategy='constant'))),
+                ('or...
+                                                                        {'col': 'smoker',
+                                                                         'mapping': {nan: -1,
+                                                                                     'no': 0,
+                                                                                     'yes': 1}}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('low_variance',
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0))),
+                ('trained_model', GradientBoostingRegressor(random_state=122))]), probability_threshold=None, encoded_labels=False, raw_score=False, drift_report=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x7faca744d700>)
+2022-10-23 13:17:00,878:INFO:Checking exceptions
+2022-10-23 13:17:00,878:INFO:Preloading libraries
+2022-10-23 13:17:00,965:INFO:Set up data.
+2022-10-23 13:17:01,180:INFO:Set up index.
+2022-10-23 13:17:35,130:INFO:Initializing predict_model()
+2022-10-23 13:17:35,132:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7faca14defa0>, estimator=GradientBoostingRegressor(random_state=122), probability_threshold=None, encoded_labels=False, raw_score=False, drift_report=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x7faca375a280>)
+2022-10-23 13:17:35,133:INFO:Checking exceptions
+2022-10-23 13:17:35,134:INFO:Preloading libraries
+2022-10-23 13:17:35,155:INFO:Set up data.
+2022-10-23 13:17:35,179:INFO:Set up index.
+2022-10-23 13:17:50,244:INFO:Initializing predict_model()
+2022-10-23 13:17:50,245:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7faca14defa0>, estimator=Pipeline(memory=Memory(location=/var/folders/sg/8dmzq1nn0wl6qmndt2sf_m1r0000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(fill_value='constant',
+                                                              strategy='constant'))),
+                ('or...
+                                                                        {'col': 'smoker',
+                                                                         'mapping': {nan: -1,
+                                                                                     'no': 0,
+                                                                                     'yes': 1}}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('low_variance',
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0))),
+                ('trained_model', GradientBoostingRegressor(random_state=122))]), probability_threshold=None, encoded_labels=False, raw_score=False, drift_report=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x7faca375a0d0>)
+2022-10-23 13:17:50,246:INFO:Checking exceptions
+2022-10-23 13:17:50,246:INFO:Preloading libraries
+2022-10-23 13:17:50,278:INFO:Set up data.
+2022-10-23 13:17:50,290:INFO:Set up index.
+2022-10-23 13:19:03,768:INFO:Initializing save_model()
+2022-10-23 13:19:03,770:INFO:save_model(model=Pipeline(memory=Memory(location=/var/folders/sg/8dmzq1nn0wl6qmndt2sf_m1r0000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(fill_value='constant',
+                                                              strategy='constant'))),
+                ('or...
+                                                                        {'col': 'smoker',
+                                                                         'mapping': {nan: -1,
+                                                                                     'no': 0,
+                                                                                     'yes': 1}}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('low_variance',
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0))),
+                ('trained_model', GradientBoostingRegressor(random_state=122))]), model_name=MLOps_Pipeline, prep_pipe_=Pipeline(memory=Memory(location=/var/folders/sg/8dmzq1nn0wl6qmndt2sf_m1r0000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(fill_value='constant',
+                                                              strategy='constant'))),
+                ('or...
+                                                               mapping=[{'col': 'sex',
+                                                                         'mapping': {nan: -1,
+                                                                                     'female': 0,
+                                                                                     'male': 1}},
+                                                                        {'col': 'smoker',
+                                                                         'mapping': {nan: -1,
+                                                                                     'no': 0,
+                                                                                     'yes': 1}}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('low_variance',
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0)))]), verbose=True, use_case=MLUsecase.REGRESSION, kwargs={})
+2022-10-23 13:19:03,770:INFO:Adding model into prep_pipe
+2022-10-23 13:19:03,964:WARNING:Only Model saved as it was a pipeline.
+2022-10-23 13:19:04,012:INFO:MLOps_Pipeline.pkl saved in current working directory
+2022-10-23 13:19:04,076:INFO:Pipeline(memory=Memory(location=/var/folders/sg/8dmzq1nn0wl6qmndt2sf_m1r0000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(fill_value='constant',
+                                                              strategy='constant'))),
+                ('or...
+                                                                        {'col': 'smoker',
+                                                                         'mapping': {nan: -1,
+                                                                                     'no': 0,
+                                                                                     'yes': 1}}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('low_variance',
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0))),
+                ('trained_model', GradientBoostingRegressor(random_state=122))])
+2022-10-23 13:19:04,077:INFO:save_model() successfully completed......................................

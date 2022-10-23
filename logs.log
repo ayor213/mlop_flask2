@@ -17011,3 +17011,41 @@ _catboost.CatBoostError: There is no trained model to use get_all_params(). Use 
 2022-10-23 18:06:31,045:INFO:Preloading libraries
 2022-10-23 18:06:31,045:INFO:Set up data.
 2022-10-23 18:06:31,052:INFO:Set up index.
+2022-10-23 19:21:06,824:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-23 19:21:06,826:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-23 19:21:06,826:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-23 19:21:06,827:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-23 19:21:10,042:INFO:Soft dependency imported: prophet: 1.1.1
+2022-10-23 19:21:11,439:INFO:Initializing load_model()
+2022-10-23 19:21:11,439:INFO:load_model(model_name=MLOps_Pipeline, platform=None, authentication=None, verbose=True)
+2022-10-23 19:21:31,123:INFO:Initializing predict_model()
+2022-10-23 19:21:31,124:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7fc925fa0a00>, estimator=Pipeline(memory=Memory(location=/var/folders/sg/8dmzq1nn0wl6qmndt2sf_m1r0000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(fill_value='constant',
+                                                              strategy='constant'))),
+                ('or...
+                                                                        {'col': 'smoker',
+                                                                         'mapping': {nan: -1,
+                                                                                     'no': 0,
+                                                                                     'yes': 1}}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('low_variance',
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0))),
+                ('trained_model', GradientBoostingRegressor(random_state=122))]), probability_threshold=None, encoded_labels=False, raw_score=False, drift_report=False, round=0, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x7fc925f6e1f0>)
+2022-10-23 19:21:31,125:INFO:Checking exceptions
+2022-10-23 19:21:31,125:INFO:Preloading libraries
+2022-10-23 19:21:31,126:INFO:Set up data.
+2022-10-23 19:21:31,149:INFO:Set up index.
